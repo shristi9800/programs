@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Programming Examples</h1>
+
+  <!-- Example 1: Sum of Two Numbers -->
+  <h2>1. Sum of Two Numbers</h2>
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+  <button onclick="sum()">Calculate Sum</button>
+  <p id="result1"></p>
+
+  <!-- Example 2: Factorial of a Number -->
+  <h2>2. Factorial of a Number</h2>
+  <input type="number" id="factorialNum" placeholder="Enter a number">
+  <button onclick="calculateFactorial()">Calculate Factorial</button>
+  <p id="result2"></p>
+
+  <!-- Example 3: Check whether a given number is prime -->
+  <h2>3. Check whether a given number is prime</h2>
+  <input type="number" id="primeNum" placeholder="Enter a number">
+  <button onclick="checkPrime()">Check Prime</button>
+  <p id="result3"></p>
+
+  <!-- Example 4: Reverse a given number -->
+  <h2>4. Reverse a given number</h2>
+  <input type="number" id="reverseNum" placeholder="Enter a number">
+  <button onclick="reverseNumber()">Reverse Number</button>
+  <p id="result4"></p>
+
+  <!-- Example 5: Find the largest element in an array -->
+  <h2>5. Find the largest element in an array</h2>
+  <textarea id="arrayInput" placeholder="Enter numbers separated by commas"></textarea>
+  <button onclick="findLargestElement()">Find Largest Element</button>
+  <p id="result5"></p>
+
+  <!-- Example 6: Check if a string is a palindrome -->
+  <h2>6. Check if a string is a palindrome</h2>
+  <input type="text" id="palindromeString" placeholder="Enter a string">
+  <button onclick="checkPalindrome()">Check Palindrome</button>
+  <p id="result6"></p>
+
+  <!-- Example 7: Calculate the area of a circle -->
+<h2>7. Calculate the area of a circle</h2>
+<input type="number" id="circleRadius" placeholder="Enter the radius">
+<button onclick="calculateCircleArea()">Calculate Area</button>
+<p id="result7"></p>
+
+<!-- Example 8: Convert temperature from Celsius to Fahrenheit -->
+<h2>8. Convert temperature from Celsius to Fahrenheit</h2>
+<input type="number" id="celsiusTemperature" placeholder="Enter temperature in Celsius">
+<button onclick="celsiusToFahrenheit()">Convert</button>
+<p id="result8"></p>
+
+<!-- Example 9: Find the Fibonacci series up to a given limit -->
+<h2>9. Find the Fibonacci series up to a given limit</h2>
+<input type="number" id="fibonacciLimit" placeholder="Enter the limit">
+<button onclick="generateFibonacci()">Generate Fibonacci</button>
+<p id="result9"></p>
+
+<!-- Example 10: Sort an array using the bubble sort algorithm -->
+<h2>10. Sort an array using the bubble sort algorithm</h2>
+<textarea id="bubbleSortArray" placeholder="Enter numbers separated by commas"></textarea>
+<button onclick="bubbleSort()">Sort Array</button>
+<p id="result10"></p>
+
+<!-- Example 11: Calculate the power of a number using recursion -->
+<h2>11. Calculate the power of a number using recursion</h2>
+<input type="number" id="powerBase" placeholder="Enter the base">
+<input type="number" id="powerExponent" placeholder="Enter the exponent">
+<button onclick="calculatePower()">Calculate Power</button>
+<p id="result11"></p>
+
+<!-- Example 12: Find the GCD (Greatest Common Divisor) of two numbers -->
+<h2>12. Find the GCD (Greatest Common Divisor) of two numbers</h2>
+<input type="number" id="gcdNum1" placeholder="Enter the first number">
+<input type="number" id="gcdNum2" placeholder="Enter the second number">
+<button onclick="findGCD()">Calculate GCD</button>
+<p id="result12"></p>
+
+<!-- Example 13: Check if a year is a leap year -->
+<h2>13. Check if a year is a leap year</h2>
+<input type="number" id="leapYear" placeholder="Enter a year">
+<button onclick="checkLeapYear()">Check Leap Year</button>
+<p id="result13"></p>
+
+<!-- Example 14: Calculate the sum of digits of a number -->
+<h2>14. Calculate the sum of digits of a number</h2>
+<input type="number" id="digitSumNum" placeholder="Enter a number">
+<button onclick="sumOfDigits()">Calculate Sum of Digits</button>
+<p id="result14"></p>
+
+<!-- Example 15: Reverse a string without using library functions -->
+<h2>15. Reverse a string without using library functions</h2>
+<input type="text" id="reverseString" placeholder="Enter a string">
+<button onclick="reverseString()">Reverse String</button>
+<p id="result15"></p>
+
+<!-- Example 16: Find the roots of a quadratic equation -->
+<h2>16. Find the roots of a quadratic equation</h2>
+<input type="number" id="quadA" placeholder="Enter coefficient a">
+<input type="number" id="quadB" placeholder="Enter coefficient b">
+<input type="number" id="quadC" placeholder="Enter coefficient c">
+<button onclick="quadraticRoots()">Calculate Roots</button>
+<p id="result16"></p>
+
+<!-- Example 17: Count the number of vowels and consonants in a string -->
+<h2>17. Count the number of vowels and consonants in a string</h2>
+<input type="text" id="vowelConsonantString" placeholder="Enter a string">
+<button onclick="countVowelsConsonants()">Count</button>
+<p id="result17"></p>
+
+<!-- Example 18: Find the factorial of a number using recursion -->
+<h2>18. Find the factorial of a number using recursion</h2>
+<input type="number" id="recursiveFactorialNum" placeholder="Enter a number">
+<button onclick="recursiveFactorial()">Calculate Factorial</button>
+<p id="result18"></p>
+
+<!-- Example 19: Check if a number is Armstrong or not -->
+<h2>19. Check if a number is Armstrong or not</h2>
+<input type="number" id="armstrongNum" placeholder="Enter a number">
+<button onclick="checkArmstrong()">Check Armstrong</button>
+<p id="result19"></p>
+
+<!-- Example 20: Swap two numbers without using a third variable -->
+<h2>20. Swap two numbers without using a third variable</h2>
+<input type="number" id="swapNum1" placeholder="Enter the first number">
+<input type="number" id="swapNum2" placeholder="Enter the second number">
+<button onclick="swapNumbers()">Swap Numbers</button>
+<p id="result20"></p>
+
+<!-- Example 21: Calculate the area of a rectangle -->
+<h2>21. Calculate the area of a rectangle</h2>
+<input type="number" id="rectangleLength" placeholder="Enter the length">
+<input type="number" id="rectangleWidth" placeholder="Enter the width">
+<button onclick="calculateRectangleArea()">Calculate Area</button>
+<p id="result21"></p>
+
+<!-- Example 22: Convert decimal to binary -->
+<h2>22. Convert decimal to binary</h2>
+<input type="number" id="decimalToBinary" placeholder="Enter a decimal number">
+<button onclick="convertToBinary()">Convert</button>
+<p id="result22"></p>
+
+<!-- Example 23: Find the LCM (Least Common Multiple) of two numbers -->
+<h2>23. Find the LCM (Least Common Multiple) of two numbers</h2>
+<input type="number" id="lcmNum1" placeholder="Enter the first number">
+<input type="number" id="lcmNum2" placeholder="Enter the second number">
+<button onclick="calculateLCM()">Calculate LCM</button>
+<p id="result23"></p>
+
+<!-- Example 24: Check if a given string is an anagram -->
+<h2>24. Check if a given string is an anagram</h2>
+<input type="text" id="anagramStr1" placeholder="Enter the first string">
+<input type="text" id="anagramStr2" placeholder="Enter the second string">
+<button onclick="checkAnagram()">Check Anagram</button>
+<p id="result24"></p>
+
+<!-- Example 25: Perform matrix multiplication -->
+<h2>25. Perform matrix multiplication</h2>
+<textarea id="matrixA" placeholder="Enter matrix A (comma-separated values)"></textarea>
+<textarea id="matrixB" placeholder="Enter matrix B (comma-separated values)"></textarea>
+<button onclick="multiplyMatrices()">Multiply Matrices</button>
+<p id="result25"></p>
+
+<!-- Example 26: Find the sum of natural numbers using a loop -->
+<h2>26. Find the sum of natural numbers using a loop</h2>
+<input type="number" id="sumNaturalNumbers" placeholder="Enter a number">
+<button onclick="calculateSumOfNaturalNumbers()">Calculate Sum</button>
+<p id="result26"></p>
+
+<!-- Example 27: Generate a random number within a given range -->
+<h2>27. Generate a random number within a given range</h2>
+<input type="number" id="randomMin" placeholder="Enter the minimum value">
+<input type="number" id="randomMax" placeholder="Enter the maximum value">
+<button onclick="generateRandomNumber()">Generate Random Number</button>
+<p id="result27"></p>
+
+<!-- Example 28: Find the average of an array -->
+<h2>28. Find the average of an array</h2>
+<textarea id="averageArray" placeholder="Enter numbers separated by commas"></textarea>
+<button onclick="calculateAverage()">Calculate Average</button>
+<p id="result28"></p>
+
+<!-- Example 29: Find the second largest element in an array -->
+<h2>29. Find the second largest element in an array</h2>
+<textarea id="secondLargestArray" placeholder="Enter numbers separated by commas"></textarea>
+<button onclick="findSecondLargest()">Find Second Largest</button>
+<p id="result29"></p>
+
+<!-- Example 30: Reverse a linked list -->
+<h2>30. Reverse a linked list</h2>
+<!-- Add your HTML and input fields for linked list here -->
+<button onclick="reverseLinkedList()">Reverse Linked List</button>
+<p id="result30"></p>
+
+
+  <!-- Add more examples similarly -->
+
+
+
+
+  <script>
+    // Example 1: Sum of Two Numbers
+    function sum() {
+      var num1 = parseFloat(document.getElementById('num1').value);
+      var num2 = parseFloat(document.getElementById('num2').value);
+      var result = num1 + num2;
+      document.getElementById('result1').innerHTML = 'Sum: ' + result;
+    }
+
+    // Example 2: Factorial of a Number
+    function calculateFactorial() {
+      var num = parseInt(document.getElementById('factorialNum').value);
+      var result = 1;
+      for (var i = 1; i <= num; i++) {
+        result *= i;
+      }
+      document.getElementById('result2').innerHTML = 'Factorial: ' + result;
+    }
+
+    // Example 3: Check whether a given number is prime
+    function checkPrime() {
+      var num = parseInt(document.getElementById('primeNum').value);
+      var isPrime = true;
+      if (num < 2) {
+        isPrime = false;
+      } else {
+        for (var i = 2; i <= Math.sqrt(num); i++) {
+          if (num % i === 0) {
+            isPrime = false;
+            break;
+          }
+        }
+      }
+      document.getElementById('result3').innerHTML = 'Is Prime: ' + isPrime;
+    }
+
+    // Example 4: Reverse a given number
+    function reverseNumber() {
+      var num = parseInt(document.getElementById('reverseNum').value);
+      var reversed = parseInt(num.toString().split('').reverse().join(''));
+      document.getElementById('result4').innerHTML = 'Reversed Number: ' + reversed;
+    }
+
+    // Example 5: Find the largest element in an array
+    function findLargestElement() {
+      var inputArray = document.getElementById('arrayInput').value.split(',').map(Number);
+      var largestElement = Math.max(...inputArray);
+      document.getElementById('result5').innerHTML = 'Largest Element: ' + largestElement;
+    }
+
+    // Example 6: Check if a string is a palindrome
+    function checkPalindrome() {
+      var str = document.getElementById('palindromeString').value.toLowerCase();
+      var reversedStr = str.split('').reverse().join('');
+      var isPalindrome = str === reversedStr;
+      document.getElementById('result6').innerHTML = 'Is Palindrome: ' + isPalindrome;
+    }
+    
+    // Example 7: Calculate the area of a circle
+  function calculateCircleArea() {
+    var radius = parseFloat(document.getElementById('circleRadius').value);
+    var area = Math.PI * Math.pow(radius, 2);
+    document.getElementById('result7').innerHTML = 'Area: ' + area.toFixed(2);
+  }
+
+  // Example 8: Convert temperature from Celsius to Fahrenheit
+  function celsiusToFahrenheit() {
+    var celsius = parseFloat(document.getElementById('celsiusTemperature').value);
+    var fahrenheit = (celsius * 9/5) + 32;
+    document.getElementById('result8').innerHTML = 'Temperature in Fahrenheit: ' + fahrenheit.toFixed(2);
+  }
+
+  // Example 9: Find the Fibonacci series up to a given limit
+  function generateFibonacci() {
+    var limit = parseInt(document.getElementById('fibonacciLimit').value);
+    var fib = [0, 1];
+    for (var i = 2; fib[i - 1] + fib[i - 2] <= limit; i++) {
+      fib[i] = fib[i - 1] + fib[i - 2];
+    }
+    document.getElementById('result9').innerHTML = 'Fibonacci Series: ' + fib.join(', ');
+  }
+
+  // Example 10: Sort an array using the bubble sort algorithm
+  function bubbleSort() {
+    var inputArray = document.getElementById('bubbleSortArray').value.split(',').map(Number);
+    var len = inputArray.length;
+    for (var i = 0; i < len - 1; i++) {
+      for (var j = 0; j < len - 1 - i; j++) {
+        if (inputArray[j] > inputArray[j + 1]) {
+          var temp = inputArray[j];
+          inputArray[j] = inputArray[j + 1];
+          inputArray[j + 1] = temp;
+        }
+      }
+    }
+    document.getElementById('result10').innerHTML = 'Sorted Array: ' + inputArray.join(', ');
+  }
+
+  // Example 11: Calculate the power of a number using recursion
+  function calculatePower() {
+    var base = parseFloat(document.getElementById('powerBase').value);
+    var exponent = parseInt(document.getElementById('powerExponent').value);
+    var result = Math.pow(base, exponent);
+    document.getElementById('result11').innerHTML = 'Result: ' + result;
+  }
+
+   // Example 12: Find the GCD (Greatest Common Divisor) of two numbers
+   function findGCD() {
+    var num1 = parseInt(document.getElementById('gcdNum1').value);
+    var num2 = parseInt(document.getElementById('gcdNum2').value);
+    var result = findGCDFunction(num1, num2);
+    document.getElementById('result12').innerHTML = 'GCD: ' + result;
+  }
+
+  function findGCDFunction(num1, num2) {
+    while (num2) {
+      var temp = num2;
+      num2 = num1 % num2;
+      num1 = temp;
+    }
+    return num1;
+  }
+
+  // Example 13: Check if a year is a leap year
+  function checkLeapYear() {
+    var year = parseInt(document.getElementById('leapYear').value);
+    var isLeapYear = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+    document.getElementById('result13').innerHTML = 'Is Leap Year: ' + isLeapYear;
+  }
+
+  // Example 14: Calculate the sum of digits of a number
+  function sumOfDigits() {
+    var num = parseInt(document.getElementById('digitSumNum').value);
+    var sum = num.toString().split('').reduce(function(acc, digit) {
+      return acc + parseInt(digit);
+    }, 0);
+    document.getElementById('result14').innerHTML = 'Sum of Digits: ' + sum;
+  }
+
+  // Example 15: Reverse a string without using library functions
+  function reverseString() {
+    var str = document.getElementById('reverseString').value;
+    var reversed = '';
+    for (var i = str.length - 1; i >= 0; i--) {
+      reversed += str[i];
+    }
+    document.getElementById('result15').innerHTML = 'Reversed String: ' + reversed;
+  }
+
+  // Example 16: Find the roots of a quadratic equation
+  function quadraticRoots() {
+    var a = parseFloat(document.getElementById('quadA').value);
+    var b = parseFloat(document.getElementById('quadB').value);
+    var c = parseFloat(document.getElementById('quadC').value);
+    var roots = quadraticRootsFunction(a, b, c);
+    document.getElementById('result16').innerHTML = 'Roots: ' + roots.join(', ');
+  }
+
+  function quadraticRootsFunction(a, b, c) {
+    var discriminant = b**2 - 4*a*c;
+    if (discriminant > 0) {
+      var root1 = (-b + Math.sqrt(discriminant)) / (2*a);
+      var root2 = (-b - Math.sqrt(discriminant)) / (2*a);
+      return [root1, root2];
+    } else if (discriminant === 0) {
+      var root = -b / (2*a);
+      return [root];
+    } else {
+      return [];
+    }
+  }
+
+  function countVowelsConsonants() {
+    var str = document.getElementById('vowelConsonantString').value.toLowerCase();
+    var vowels = str.match(/[aeiou]/g);
+    var consonants = str.match(/[^aeiou]/g);
+    document.getElementById('result17').innerHTML = 'Vowels: ' + (vowels ? vowels.length : 0) + ', Consonants: ' + (consonants ? consonants.length : 0);
+  }
+
+  // Example 18: Find the factorial of a number using recursion
+  function recursiveFactorial() {
+    var num = parseInt(document.getElementById('recursiveFactorialNum').value);
+    var result = calculateFactorialRecursively(num);
+    document.getElementById('result18').innerHTML = 'Factorial: ' + result;
+  }
+
+  function calculateFactorialRecursively(num) {
+    if (num === 0 || num === 1) {
+      return 1;
+    } else {
+      return num * calculateFactorialRecursively(num - 1);
+    }
+  }
+
+  // Example 19: Check if a number is Armstrong or not
+  function checkArmstrong() {
+    var num = parseInt(document.getElementById('armstrongNum').value);
+    var originalNum = num;
+    var numDigits = num.toString().length;
+    var sum = 0;
+
+    while (num > 0) {
+      var digit = num % 10;
+      sum += Math.pow(digit, numDigits);
+      num = Math.floor(num / 10);
+    }
+
+    var isArmstrong = sum === originalNum;
+    document.getElementById('result19').innerHTML = 'Is Armstrong: ' + isArmstrong;
+  }
+
+  // Example 20: Swap two numbers without using a third variable
+  function swapNumbers() {
+    var num1 = parseFloat(document.getElementById('swapNum1').value);
+    var num2 = parseFloat(document.getElementById('swapNum2').value);
+    num1 = num1 + num2;
+    num2 = num1 - num2;
+    num1 = num1 - num2;
+    document.getElementById('result20').innerHTML = 'Swapped Numbers: ' + num1 + ', ' + num2;
+  }
+
+  // Example 21: Calculate the area of a rectangle
+  function calculateRectangleArea() {
+    var length = parseFloat(document.getElementById('rectangleLength').value);
+    var width = parseFloat(document.getElementById('rectangleWidth').value);
+    var area = length * width;
+    document.getElementById('result21').innerHTML = 'Area: ' + area;
+  }
+
+  // Example 22: Convert decimal to binary
+  function convertToBinary() {
+    var decimalNum = parseInt(document.getElementById('decimalToBinary').value);
+    var binaryNum = decimalNum.toString(2);
+    document.getElementById('result22').innerHTML = 'Binary: ' + binaryNum;
+  }
+
+  // Example 23: Find the LCM (Least Common Multiple) of two numbers
+  function calculateLCM() {
+    var num1 = parseInt(document.getElementById('lcmNum1').value);
+    var num2 = parseInt(document.getElementById('lcmNum2').value);
+    var lcm = calculateLCMFunction(num1, num2);
+    document.getElementById('result23').innerHTML = 'LCM: ' + lcm;
+  }
+
+  function calculateLCMFunction(a, b) {
+    return (a * b) / findGCDFunction(a, b);
+  }
+  // Example 24: Check if a given string is an anagram
+  function checkAnagram() {
+    var str1 = document.getElementById('anagramStr1').value.toLowerCase().replace(/\s/g, '');
+    var str2 = document.getElementById('anagramStr2').value.toLowerCase().replace(/\s/g, '');
+    var isAnagram = str1.split('').sort().join('') === str2.split('').sort().join('');
+    document.getElementById('result24').innerHTML = 'Is Anagram: ' + isAnagram;
+  }
+
+  // Example 25: Perform matrix multiplication
+  function multiplyMatrices() {
+    var matrixA = parseMatrix(document.getElementById('matrixA').value);
+    var matrixB = parseMatrix(document.getElementById('matrixB').value);
+    var result = multiplyMatricesFunction(matrixA, matrixB);
+    document.getElementById('result25').innerHTML = 'Result: ' + result.map(row => row.join(', ')).join('<br>');
+  }
+
+  function parseMatrix(input) {
+    return input.split('\n').map(row => row.split(',').map(Number));
+  }
+
+  function multiplyMatricesFunction(a, b) {
+    // Implementation of matrix multiplication here
+    // ...
+    return resultMatrix;
+  }
+
+  // Example 26: Find the sum of natural numbers using a loop
+  function calculateSumOfNaturalNumbers() {
+    var n = parseInt(document.getElementById('sumNaturalNumbers').value);
+    var sum = 0;
+    for (var i = 1; i <= n; i++) {
+      sum += i;
+    }
+    document.getElementById('result26').innerHTML = 'Sum: ' + sum;
+  }
+
+  // Example 27: Generate a random number within a given range
+  function generateRandomNumber() {
+    var min = parseInt(document.getElementById('randomMin').value);
+    var max = parseInt(document.getElementById('randomMax').value);
+    var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    document.getElementById('result27').innerHTML = 'Random Number: ' + randomNumber;
+  }
+
+  // Example 28: Find the average of an array
+  function calculateAverage() {
+    var inputArray = document.getElementById('averageArray').value.split(',').map(Number);
+    var average = inputArray.reduce((acc, num) => acc + num, 0) / inputArray.length;
+    document.getElementById('result28').innerHTML = 'Average: ' + average;
+  }
+
+  // Example 29: Find the second largest element in an array
+  function findSecondLargest() {
+    var inputArray = document.getElementById('secondLargestArray').value.split(',').map(Number);
+    inputArray = inputArray.filter(num => !isNaN(num)); // Filter out non-numeric values
+    if (inputArray.length < 2) {
+      document.getElementById('result29').innerHTML = 'Insufficient elements in the array.';
+  
+      document.getElementById('result29').innerHTML = 'Insufficient elements in the array.';
+    return;
+  }
+
+  // Find the second largest element
+  var largest = inputArray[0];
+  var secondLargest = -Infinity;
+
+  for (var i = 1; i < inputArray.length; i++) {
+    if (inputArray[i] > largest) {
+      secondLargest = largest;
+      largest = inputArray[i];
+    } else if (inputArray[i] > secondLargest && inputArray[i] < largest) {
+      secondLargest = inputArray[i];
+    }
+  }
+
+  if (secondLargest === -Infinity) {
+    document.getElementById('result29').innerHTML = 'No second largest element found.';
+  } else {
+    document.getElementById('result29').innerHTML = 'Second Largest Element: ' + secondLargest;
+  }
+
+  // Example 30: Reverse a linked list
+  // Assuming you have a linked list class and Node class defined
+
+  class Node {
+    constructor(value) {
+      this.value = value;
+      this.next = null;
+    }
+  }
+
+  class LinkedList {
+    constructor() {
+      this.head = null;
+    }
+
+    // Function to add a node to the end of the linked list
+    addNode(value) {
+      var newNode = new Node(value);
+      if (!this.head) {
+        this.head = newNode;
+      } else {
+        var current = this.head;
+        while (current.next) {
+          current = current.next;
+        }
+        current.next = newNode;
+      }
+    }
+
+    // Function to reverse the linked list
+    reverseLinkedList() {
+      var prev = null;
+      var current = this.head;
+      var next = null;
+
+      while (current) {
+        next = current.next;
+        current.next = prev;
+        prev = current;
+        current = next;
+      }
+
+      this.head = prev;
+    }
+  }
+
+  // Example 30: Reverse a linked list
+  function reverseLinkedList() {
+    var linkedList = new LinkedList();
+    var values = document.getElementById('linkedValues').value.split(',').map(Number);
+    values.forEach(value => linkedList.addNode(value));
+
+    // Reverse the linked list
+    linkedList.reverseLinkedList();
+
+    // Display the reversed linked list
+    var reversedList = [];
+    var current = linkedList.head;
+    while (current) {
+      reversedList.push(current.value);
+      current = current.next;
+    }
+
+    document.getElementById('result30').innerHTML = 'Reversed Linked List: ' + reversedList.join(', ');
+     }
+
+    }
+
+    // Add more functions for other examples
+  </script>
+
+</body>
+</html>
